@@ -155,7 +155,7 @@ var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄�
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
-var font_size = 5;
+var font_size = 9;
 var columns = c.width/font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Regna Bootstrap Template</title>
+  <title>Anonymous.app</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -12,21 +12,26 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+
   <!-- =======================================================
-    Theme Name: Regna
-    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Theme Name: eStartup
+    Theme URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
@@ -34,90 +39,215 @@
 
 <body>
 
-  <!--==========================
-  Header
-  ============================-->
-  <header id="header">
+  <header id="header" class="header header-hide">
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo1.png" alt="Anonymous.app" title="" /></img></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!--<h1><a href="#hero">Regna</a></h1>-->
+        <h1><a href="index.html" class="scrollto">Anonymous.app</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-    <!--       <li><a href="#about">Home</a></li>
-          <li><a href="#about">Explorer</a></li>
-          <li><a href="#services">Donate</a></li> -->
+          <li><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Resources</a>
+            <ul>
+          <!--    <li><a href="comingsoon.html"target="_blank">Press Kit</a></li> -->
+                <li><a href="community.html">Community</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
 
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
+
+
   <!--==========================
     Hero Section
   ============================-->
-  <section id="hero">
+  <section id="hero" class="wow fadeIn">
+<canvas id="c">  </canvas>
+    <div id="overlay">
+    <div class="container">
 
+      <div class="row justify-content-left">
 
-    <div id="container">
-       <canvas id="c"></canvas>
-      <div id="overlay">
-<div class ="hero">
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <h1>The Anonymous App</h1>
-          <h2></h2>
-          <br><br><br>
-             <a href="#about" class="btn-get-started">Coming Soon</a> 
-            </div>
+        <div class="col-md-8 col-lg-12">
+
+      <h1></h1>
+      <h4>
+      Anonymous <a href="" class="typewrite" data-period="500" data-type='[ "File Storage.", "Smart Contracts.", "Verification.", "Communications."  ]'>
+          <span class="wrap"></span>
+        </a>
+      </h4>  <!--    <img src="img/hero-img.png" alt="Hero Imgs">-->
+      <a href="https://universalbitproject.com" class="btn-get-started scrollto">Coming Soon</a>
+  <!--    <div class="btns">
+        <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
+        <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
+        <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a>
+      </div> -->
     </div>
 
 
 
+</div>
+  </div>
+    </div>
+
   </section><!-- #hero -->
 
-  <main id="main">
 
+      <!-- Begin MailChimp Signup Form -->
 
-
-
-    <!--==========================
-      Footer
-    ============================-->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-
+    <div id="mailchimp">
+    <div class="container">
+      <div class="row justify-content-center">
+          <h2>Sign Up For Our Newsletter</h2><br>
         </div>
       </div>
 
       <div class="container">
-        <div class="copyright">
-          &copy; 2018. All Rights Reserved |  <a href="https://universalbitproject.com">Universal Bit Project</a>
+        <div class="row justify-content-center">
+          <form action="https://universalbitproject.us20.list-manage.com/subscribe/post?u=9b90c43e021080204c559b12e&amp;id=a2cefed012" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mailchimp">
+
+  <div class="row">
+                    <div class="col-md-6">
+                		<input type="email" size="30" value="Enter your email" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+  </div>
+
+                		<div id="mce-responses" class="clear">
+                			<div class="response" id="mce-error-response" style="display:none"></div>
+                			<div class="response" id="mce-success-response" style="display:none"></div>
+                		</div>
+  <div class="col-md-6">
+                		<div class="clear">
+                			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                		</div>
+  </div>
+  </div>
+    </div>
+                	</form>
+
+                <!--End mc_embed_signup-->
+  </div>
+  </div>
+  </div>
+    <!--End mc_embed_signup-->
+
+
+  <!--==========================
+    About Us Section
+  ============================-->
+
+<!--
+
+  <section id="about-us" class="about-us padd-section wow fadeInUp">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-5 col-lg-6">
+          <img src="img/1.png" alt="About">
+        </div>
+
+        <div class="col-md-7 col-lg-6">
+          <div class="about-content">
+
+            <h2>Smart Money, Smart Technology</h2>
+            <p>Unibit is an MIT licensed, open source, blockchain based architecture featuring fast transactions,
+              low fees, high network capacity, and industry leading cryptography proofs for next generation digital transactions.
+            Our technology stack enables us to innovate and introduce services and features that become available with the use of programmable money. </p>
+
+
+
+          </div>
         </div>
 
       </div>
-    </footer><!-- #footer -->
+    </div>
+  </section>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+-->
 
+  <!--==========================
+     About Us Section
+   ============================-->
+
+<!--
+  <section id="about-us2" class="about-us2 padd-section wow fadeInUp">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-6 col-lg-6">
+          <div class="about-content2">
+
+            <h2>Transparent, Secure & Fast</h2>
+            <p>Each transaction can be verified with the transaction id and associated addresses. Our system uses enterprise grade security to protect your transactions and personal data.
+              The mobile money is delivered directly to the recipients' account within minutes, and the funds can be used immediately. No forms, no queues and minimal fees.</p>
+
+
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-6">
+          <img src="img/1.png" alt="About">
+        </div>
+
+
+      </div>
+    </div>
+
+
+</div>
+
+
+  </section>
+
+-->
+
+
+
+
+
+
+
+
+      <!--==========================
+        Footer
+      ============================-->
+      <footer class="footer">
+
+
+        <div class="copyrights">
+          <div class="container">
+          <p>&copy;2019 Copyright Anonymous.app. All Rights Reserved.</p>
+
+          </div>
+        </div>
+
+      </footer>
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
+
+
+  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
-
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/modal-video/js/modal-video.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
